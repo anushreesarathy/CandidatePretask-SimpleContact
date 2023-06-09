@@ -1,5 +1,5 @@
-namespace SimpleContact.Services;
-
+namespace SimpleContact.Services
+{ 
 public interface IEmailService
 {
     /// <summary>
@@ -12,4 +12,5 @@ public interface IEmailService
     /// <exception cref="ArgumentNullException">Any parameter passed in a null or whitespace only will throw this error</exception>
     /// <exception cref="InvalidOperationException">Any parameter passed in a null or whitespace only will throw this error</exception>
     void SendContactEmail(string name, string email, string message);
+}
 }
